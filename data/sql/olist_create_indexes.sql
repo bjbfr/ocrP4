@@ -1,0 +1,20 @@
+create unique index on customers (customer_id);
+create index on customers (customer_unique_id);
+create unique index on orders (customer_id,order_id);
+create index on order_payments (order_id);
+create index on order_reviews (order_id);
+create index on order_reviews (review_id);
+create unique index on products (product_id);
+create index on order_items (order_id);
+create index on order_items (product_id);
+create index on geolocation (geolocation_state,geolocation_zip_code_prefix,geolocation_city);
+create index on geo_view (g_state,g_zip_code_prefix,g_city);
+create index on customers (customer_state,customer_zip_code_prefix,customer_city);
+create index on cat_mapping(product_category_name);
+create index on olist_view(c_customer_unique_id);
+create index on olist_view(o_order_delivered_customer_date,o_order_status);
+create index on olist_view(c_customer_unique_id,i_order_id);
+create index on olist_view(c_customer_unique_id,pa_payment_type);
+create index on olist_view(c_customer_unique_id,p_product_category_name);
+create index on olist_view(o_order_purchase_timestamp,o_order_status);
+

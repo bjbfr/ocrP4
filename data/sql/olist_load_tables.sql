@@ -1,0 +1,9 @@
+\copy customers FROM './db_files/list_customers_dataset.csv' DELIMITER ',' CSV HEADER
+\copy geolocation FROM './db_files/olist_geolocation_dataset.csv' DELIMITER ',' CSV HEADER
+\copy order_items FROM './db_files/olist_order_items_dataset.csv' DELIMITER ',' CSV HEADER
+\copy order_payments FROM './db_files/olist_order_payments_dataset.csv' DELIMITER ',' CSV HEADER
+\copy order_reviews FROM './db_files/olist_order_reviews_dataset.csv' DELIMITER ',' CSV HEADER
+\copy orders FROM './db_files/olist_orders_dataset.csv' DELIMITER ',' CSV HEADER
+\copy products FROM './db_files/olist_products_dataset.csv' DELIMITER ',' CSV HEADER
+\copy sellers FROM './db_files/olist_sellers_dataset.csv' DELIMITER ',' CSV HEADER
+\copy cat_mapping FROM './db_files/product_category_name_translation2.csv' DELIMITER ',' CSV HEADER

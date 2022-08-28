@@ -1,0 +1,8 @@
+work
+__pycache__/
+data/work/
+data/db_files/
+data/dfs/
+data/logs/
+data/archive.zip
+
